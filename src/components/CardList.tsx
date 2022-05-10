@@ -21,11 +21,9 @@ export function CardList({ cards }: CardsProps): JSX.Element {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   // TODO SELECTED IMAGE URL STATE
-
   const [imgUrl, setImgUrl] = useState('')
 
   // TODO FUNCTION HANDLE VIEW IMAGE
-
   function handleViewImage(url: string) {
     setImgUrl(url)
     onOpen()
